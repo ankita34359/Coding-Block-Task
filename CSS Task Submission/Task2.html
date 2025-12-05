@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+
+    <style>
+
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .bar{
+            display: flex;    
+            gap: 2rem;  
+            background-color: rgb(129, 193, 232);
+            height: 80px;
+            border: 2px solid rgb(6, 135, 240);
+            align-items: center;
+            list-style-type: none;
+            font-size: 20px;
+        }
+        .logo{
+            margin-right: 500px;
+            margin-left: 30px;
+        }
+        .elt{
+           margin-left: 2px;
+           margin-right: 5px;
+           padding-right: 50px;
+        }
+        #elt-signUp{
+            color: #002b9c;
+        }
+        .elt-search{
+            border-radius: 5px;
+            background-color: rgb(152, 208, 242);
+            font-size: 20px;
+        }
+        .search{
+            height: 25px;
+            width: 220px;
+            border-radius: 5px;
+            background-color: rgb(220, 238, 250);
+        }
+        a{
+            list-style-type: none;
+            list-style: none;
+        }
+        /* .div1{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 50%;
+            margin: 50px;
+        } */
+    </style>
+</head>
+<body>
+    <nav class="bar">
+        <li class="logo"><a href=""> Amazon.in</a></li>
+        <li class="elt" id="elt-signUp"><a href="">SignUp</a></li>
+        <li class="elt"><a href="">Login</a></li>
+        <li class="elt"><a href="">My Account</a></li>
+        <input class="search" type="text" placeholder="Search here..">
+        <button class="elt-search">Search</button>
+    </nav>
+    
+</body>
+</html>
