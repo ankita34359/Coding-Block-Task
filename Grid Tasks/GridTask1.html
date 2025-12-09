@@ -1,1 +1,55 @@
-
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                font-family: cursive;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 200px 1fr 200px;
+                grid-template-rows: 50px 1fr 50px;
+                grid-template-areas: 
+                "header header header"
+                "sidebar content sidebar1"
+                "footer footer footer";
+                gap: 10px;
+                height: 100vh;
+            }
+            .header{
+                grid-area: header;
+                background-color: rgb(183, 145, 90);
+                padding: 15px;
+            }
+            .sidebar{
+                grid-area: sidebar;
+                background-color: rgb(183, 145, 90);
+                padding: 15px;
+            }
+            .content{
+                grid-area: content;
+                background-color: rgb(183, 145, 90);
+                padding: 15px;
+            }
+            .sidebar1{
+                grid-area: sidebar1;
+                background-color: rgb(183, 145, 90);
+                padding: 15px;
+            }
+            .footer{
+                grid-area: footer;
+                background-color: rgb(183, 145, 90);
+                padding: 15px;
+            }            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">Header</div>
+            <div class="sidebar">Left</div>
+            <div class="content">Main</div>
+            <div class="sidebar1">Right</div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>
