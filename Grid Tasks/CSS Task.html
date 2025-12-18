@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .div1{
+            height: 60px;
+            width: 60px;
+            background-color: aqua;
+            border-radius: 50%;
+            border: 2px solid;
+            animation-name: moveAndColor;
+            animation-duration: 5s;
+            position: relative;
+            animation-iteration-count: infinite;
+        }
+
+        .div2{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(162, 240, 240);
+            border-radius: 10px;
+            border: 2px solid;
+            animation-name: moveAndColor;
+            animation-duration: 5s;
+            position: absolute;
+            margin: 5px;
+            animation-iteration-count: infinite;
+        }
+
+         @keyframes moveAndColor {
+            0%{
+                transform: translate(0, 0);
+                background-color: steelblue;
+            }
+            25%{
+                transform: translate(200px, 0);
+                background-color: orange;
+            }
+            50%{
+                transform: translate(200px, 200px);
+                background-color: rgb(223, 226, 21);
+            }
+            75%{
+                transform: translate(0, 200px);
+                background-color: rgb(131, 143, 55);
+            }
+            100%{
+                transform: translate(0, 0);
+                background-color: rgb(48, 213, 56);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div2">
+        <div class="div1">
+
+        </div>
+    </div>
+</body>
+</html>
